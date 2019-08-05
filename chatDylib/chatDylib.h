@@ -11,12 +11,14 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#define showAlert [[[UIAlertView alloc] initWithTitle:@"提示" message:@"大杰哥很丑" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@"关闭", nil] show];
-
-#define INSERT_SUCCESS_WELCOME "\n\n----------------注入 dylib 成功----------------\n\n"
-
-@interface SGAppDelegate
+@interface SGAppDelegate /// 闲聊入口
 
 + (void)classMethod;
+
+@end
+
+/// 密码登录页面
+@interface SGLoginPasswordViewController /// 闲聊密码登录页面
+
 
 @end

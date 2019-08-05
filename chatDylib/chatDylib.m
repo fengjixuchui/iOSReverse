@@ -14,12 +14,13 @@
 #import <Cycript/Cycript.h>
 #import <MDCycriptManager.h>
 
+/// Cycript端口号
 #define Cycript_Port 6666
 
 /// 在CHConstructor中使用CHLoadClass()或CHLoadLateClass()加载类
 /// 在CHConstructor中使用CHHook() hook method
 CHConstructor {
-    printf(INSERT_SUCCESS_WELCOME);
+    printf("\n\n----------------注入 dylib 成功----------------\n\n");
     
     [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidFinishLaunchingNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
         
