@@ -17,6 +17,8 @@
 /// Cycript端口号
 #define Cycript_Port 6666
 
+#define showAlertView [[[UIAlertView alloc] initWithTitle:@"大香蕉" message:@"阿亮带你飞" delegate:nil cancelButtonTitle:@"好的" otherButtonTitles:nil, nil] show]
+
 /// 在CHConstructor中使用CHLoadClass()或CHLoadLateClass()加载类
 /// 在CHConstructor中使用CHHook() hook method
 CHConstructor {
@@ -49,14 +51,14 @@ CHOptimizedClassMethod0(self, void, SGAppDelegate, classMethod){
     CHSuper0(SGAppDelegate, classMethod);
 }
 
-CHOptimizedMethod2(self, void, SGAppDelegate, application, UIApplication *, application, didFinishLaunchingWithOptions, NSDictionary *, options) {
+/// - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+CHOptimizedMethod2(self, void, SGAppDelegate, application, UIApplication *, application, didFinishLaunchingWithOptions, NSDictionary *, launchOptions) {
     
-    CHSuper2(SGAppDelegate, application, application, didFinishLaunchingWithOptions, options);
+    CHSuper2(SGAppDelegate, application, application, didFinishLaunchingWithOptions, launchOptions);
     
     NSLog(@"## Start Cycript ##");
     
-//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"大香蕉" message:@"阿亮带你飞" delegate:nil cancelButtonTitle:@"好的" otherButtonTitles:nil, nil];
-//    [alert show];
+//    showAlertView;
     
     
 //    UIImageView* pic = [[UIImageView alloc] initWithFrame:(CGRectMake(150, 50, 200, 400))];
@@ -66,11 +68,26 @@ CHOptimizedMethod2(self, void, SGAppDelegate, application, UIApplication *, appl
     //    CYListenServer(CYCRIPT_PORT);
 }
 
+CHDeclareClass(SGLoginPasswordViewController);///定义一个类
+
+CHOptimizedMethod0(self, void, SGLoginPasswordViewController, viewDidLoad) {
+    CHSuper0(SGLoginPasswordViewController, viewDidLoad);
+    showAlertView;
+}
+
+/// - (void)sgTableView:(id)arg1 didSelectRowAtIndexPath:(id)arg2;
+CHOptimizedMethod2(self, void, SGLoginPasswordViewController, sgTableView, id, arg1, didSelectRowAtIndexPath, id , arg2) {
+    CHSuper2(SGLoginPasswordViewController, sgTableView, arg1, didSelectRowAtIndexPath, arg2);
+    showAlertView;
+}
+
 CHConstructor {
     @autoreleasepool {
         CHLoadLateClass(SGAppDelegate);
         CHClassHook0(SGAppDelegate, classMethod);
+        CHClassHook0(SGLoginPasswordViewController, viewDidLoad);
         CHHook2(SGAppDelegate, application, didFinishLaunchingWithOptions);
+        CHHook2(SGLoginPasswordViewController, sgTableView, didSelectRowAtIndexPath);
     }
 }
 

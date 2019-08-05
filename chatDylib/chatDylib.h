@@ -20,5 +20,6 @@
 /// 密码登录页面
 @interface SGLoginPasswordViewController /// 闲聊密码登录页面
 
+- (void)sgTableView:(id)arg1 didSelectRowAtIndexPath:(id)arg2;
 
 @end
