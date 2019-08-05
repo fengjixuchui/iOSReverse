@@ -1,0 +1,54 @@
+
+/* Class = "UILabel"; text = "手机号码"; ObjectID = "DLT-ZC-1JB"; */
+"DLT-ZC-1JB.text" = "请输入好友手机号码";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "EET-j0-eAN"; */
+"EET-j0-eAN.text" = "Label";
+
+/* Class = "UILabel"; text = "  10  "; ObjectID = "Efw-Aa-5BG"; */
+"Efw-Aa-5BG.text" = "  10  ";
+
+/* Class = "UILabel"; text = "13900000001"; ObjectID = "PrR-oG-E99"; */
+"PrR-oG-E99.text" = "13900000001";
+
+/* Class = "UILabel"; text = "邀请使用Sugram"; ObjectID = "Q7s-kU-hdz"; */
+"Q7s-kU-hdz.text" = "邀请使用闲聊";
+
+/* Class = "UILabel"; text = "匹配通讯录中的朋友"; ObjectID = "WLY-dX-FaW"; */
+"WLY-dX-FaW.text" = "匹配通讯录中的朋友";
+
+/* Class = "UILabel"; text = "John"; ObjectID = "XbJ-sV-lsp"; */
+"XbJ-sV-lsp.text" = "John";
+
+/* Class = "UILabel"; text = "邀请手机联系人"; ObjectID = "dSE-ae-T2e"; */
+"dSE-ae-T2e.text" = "邀请手机联系人";
+
+/* Class = "UILabel"; text = "群聊"; ObjectID = "fbH-UU-naG"; */
+"fbH-UU-naG.text" = "群聊";
+
+/* Class = "UILabel"; text = "邀请微信好友加入Sugram"; ObjectID = "gqf-zO-Wfl"; */
+"gqf-zO-Wfl.text" = "邀请微信好友加入Sugram";
+
+/* Class = "UILabel"; text = "邀请手机联系人"; ObjectID = "hCa-4V-zYS"; */
+"hCa-4V-zYS.text" = "邀请手机联系人";
+
+/* Class = "UILabel"; text = "扫用户的二维码"; ObjectID = "idh-RY-NVs"; */
+"idh-RY-NVs.text" = "扫描二维码";
+
+/* Class = "UILabel"; text = "扫一扫"; ObjectID = "lQw-nQ-gv0"; */
+"lQw-nQ-gv0.text" = "扫一扫";
+
+/* Class = "UILabel"; text = "添加好友"; ObjectID = "la1-fP-5o2"; */
+"la1-fP-5o2.text" = "添加好友";
+
+/* Class = "UILabel"; text = "手机通讯录匹配"; ObjectID = "ugP-yG-XCz"; */
+"ugP-yG-XCz.text" = "手机通讯录匹配";
+
+
+/* Class = "UILabel"; text = "邀请"; ObjectID = "yLn-71-aI5"; */
+"yLn-71-aI5.text" = "邀请";
+
+/* Class = "UINavigationItem"; title = "添加好友"; ObjectID = "zbY-Bn-YuX"; */
+"zbY-Bn-YuX.title" = "添加好友";
+/* Class = "UILabel"; text = "闲聊小助手"; ObjectID = "aQT-sr-cpa"; */
+"aQT-sr-cpa.text" = "闲聊小助手;

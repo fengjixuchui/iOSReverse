@@ -14,17 +14,21 @@
 #import <Cycript/Cycript.h>
 #import <MDCycriptManager.h>
 
-CHConstructor{
+#define Cycript_Port 6666
+
+/// 在CHConstructor中使用CHLoadClass()或CHLoadLateClass()加载类
+/// 在CHConstructor中使用CHHook() hook method
+CHConstructor {
     printf(INSERT_SUCCESS_WELCOME);
     
     [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidFinishLaunchingNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
         
 #ifndef __OPTIMIZE__
-        CYListenServer(6666);
-
+        CYListenServer(Cycript_Port);
+        
         MDCycriptManager* manager = [MDCycriptManager sharedInstance];
         [manager loadCycript:NO];
-
+        
         NSError* error;
         NSString* result = [manager evaluateCycript:@"UIApp" error:&error];
         NSLog(@"result: %@", result);
@@ -36,56 +40,37 @@ CHConstructor{
     }];
 }
 
+CHDeclareClass(SGAppDelegate);///定义一个类
 
-CHDeclareClass(CustomViewController)
-
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wstrict-prototypes"
-
-//add new method
-CHDeclareMethod1(void, CustomViewController, newMethod, NSString*, output){
-    NSLog(@"This is a new method : %@", output);
-}
-
-#pragma clang diagnostic pop
-
-CHOptimizedClassMethod0(self, void, CustomViewController, classMethod){
+CHOptimizedClassMethod0(self, void, SGAppDelegate, classMethod){
     NSLog(@"hook class method");
-    CHSuper0(CustomViewController, classMethod);
+    /// (可选)使用CHSuper()调用旧方法
+    CHSuper0(SGAppDelegate, classMethod);
 }
 
-CHOptimizedMethod0(self, NSString*, CustomViewController, getMyName){
-    //get origin value
-    NSString* originName = CHSuper(0, CustomViewController, getMyName);
+CHOptimizedMethod2(self, void, SGAppDelegate, application, UIApplication *, application, didFinishLaunchingWithOptions, NSDictionary *, options) {
     
-    NSLog(@"origin name is:%@",originName);
+    CHSuper2(SGAppDelegate, application, application, didFinishLaunchingWithOptions, options);
     
-    //get property
-    NSString* password = CHIvar(self,_password,__strong NSString*);
+    NSLog(@"## Start Cycript ##");
     
-    NSLog(@"password is %@",password);
+//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"大香蕉" message:@"阿亮带你飞" delegate:nil cancelButtonTitle:@"好的" otherButtonTitles:nil, nil];
+//    [alert show];
     
-    [self newMethod:@"output"];
     
-    //set new property
-    self.newProperty = @"newProperty";
+//    UIImageView* pic = [[UIImageView alloc] initWithFrame:(CGRectMake(150, 50, 200, 400))];
+//    pic.image = [UIImage imageNamed:@"icon"];
+//    [application.keyWindow addSubview:pic];
     
-    NSLog(@"newProperty : %@", self.newProperty);
-    
-    //change the value
-    return @"Mac";
-    
+    //    CYListenServer(CYCRIPT_PORT);
 }
 
-//add new property
-CHPropertyRetainNonatomic(CustomViewController, NSString*, newProperty, setNewProperty);
-
-CHConstructor{
-    CHLoadLateClass(CustomViewController);
-    CHClassHook0(CustomViewController, getMyName);
-    CHClassHook0(CustomViewController, classMethod);
-    
-    CHHook0(CustomViewController, newProperty);
-    CHHook1(CustomViewController, setNewProperty);
+CHConstructor {
+    @autoreleasepool {
+        CHLoadLateClass(SGAppDelegate);
+        CHClassHook0(SGAppDelegate, classMethod);
+        CHHook2(SGAppDelegate, application, didFinishLaunchingWithOptions);
+    }
 }
+
 

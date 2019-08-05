@@ -1,0 +1,39 @@
+
+/* Class = "UILabel"; text = "准备发给朵朵"; ObjectID = "B9t-JY-Y6k"; */
+"B9t-JY-Y6k.text" = "準備發給朵朵";
+
+/* Class = "UITextField"; placeholder = "填写个数"; ObjectID = "FJi-nT-zPc"; */
+"FJi-nT-zPc.placeholder" = "填寫個數";
+
+/* Class = "UILabel"; text = "¥0.00"; ObjectID = "FgJ-mn-U2d"; */
+"FgJ-mn-U2d.text" = "¥0.00";
+
+/* Class = "UIButton"; normalTitle = "关闭"; ObjectID = "IhP-h9-Fpa"; */
+"IhP-h9-Fpa.normalTitle" = "關閉";
+
+/* Class = "UIButton"; normalTitle = "关闭"; ObjectID = "TYU-2Y-nQG"; */
+"TYU-2Y-nQG.normalTitle" = "關閉";
+
+/* Class = "UILabel"; text = "准备发给吃货一家人"; ObjectID = "ZaJ-Om-GZ2"; */
+"ZaJ-Om-GZ2.text" = "準備發給吃貨一家人";
+
+/* Class = "UITextField"; placeholder = "填写金额"; ObjectID = "Zw8-ap-6iy"; */
+"Zw8-ap-6iy.placeholder" = "填寫金額";
+
+/* Class = "UILabel"; text = "发红包"; ObjectID = "gun-wF-Qyd"; */
+"gun-wF-Qyd.text" = "發紅包";
+
+/* Class = "UILabel"; text = "¥0.00"; ObjectID = "hK5-75-Lwg"; */
+"hK5-75-Lwg.text" = "¥0.00";
+
+/* Class = "UIButton"; normalTitle = "塞钱进红包"; ObjectID = "idn-ph-Buo"; */
+"idn-ph-Buo.normalTitle" = "塞錢進紅包";
+
+/* Class = "UITextField"; placeholder = "填写金额"; ObjectID = "lBl-Y3-R78"; */
+"lBl-Y3-R78.placeholder" = "填寫金額";
+
+/* Class = "UILabel"; text = "发红包"; ObjectID = "mak-CU-p4k"; */
+"mak-CU-p4k.text" = "發紅包";
+
+/* Class = "UIButton"; normalTitle = "塞钱进红包"; ObjectID = "mva-lk-iRt"; */
+"mva-lk-iRt.normalTitle" = "塞錢進紅包";

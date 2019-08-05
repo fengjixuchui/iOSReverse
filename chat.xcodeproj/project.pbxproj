@@ -37,6 +37,7 @@
 		C6D3E5FB22F7B3EC003D3C17 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = C6D3E5FA22F7B3EC003D3C17 /* fishhook.h */; };
 		C6D3E5FD22F7B3EC003D3C17 /* chatDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = C6D3E5FC22F7B3EC003D3C17 /* chatDylib.h */; };
 		C6D3E5FF22F7B3EC003D3C17 /* chatDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D3E5FE22F7B3EC003D3C17 /* chatDylib.m */; };
+		C6D3E60922F81041003D3C17 /* xianliao.ipa in Resources */ = {isa = PBXBuildFile; fileRef = C6D3E60822F81041003D3C17 /* xianliao.ipa */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		C6D3E5FA22F7B3EC003D3C17 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
 		C6D3E5FC22F7B3EC003D3C17 /* chatDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chatDylib.h; sourceTree = "<group>"; };
 		C6D3E5FE22F7B3EC003D3C17 /* chatDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chatDylib.m; sourceTree = "<group>"; };
+		C6D3E60822F81041003D3C17 /* xianliao.ipa */ = {isa = PBXFileReference; lastKnownFileType = file; path = xianliao.ipa; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 		C6D3E5B022F7B3EC003D3C17 /* TargetApp */ = {
 			isa = PBXGroup;
 			children = (
+				C6D3E60822F81041003D3C17 /* xianliao.ipa */,
 				C6D3E5B122F7B3EC003D3C17 /* put ipa or app here */,
 			);
 			name = TargetApp;
@@ -381,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6D3E5AF22F7B3EC003D3C17 /* MDConfig.plist in Resources */,
+				C6D3E60922F81041003D3C17 /* xianliao.ipa in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,6 +627,7 @@
 					"$(MonkeyDevTheosPath)/vendor/include/**",
 				);
 				INSTALL_PATH = "@executable_path/Frameworks/libchatDylib.dylib";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -684,6 +689,7 @@
 					"$(MonkeyDevTheosPath)/vendor/include/**",
 				);
 				INSTALL_PATH = "@executable_path/Frameworks/libchatDylib.dylib";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -720,6 +726,7 @@
 				DEVELOPMENT_TEAM = JMP4343QW7;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = chat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MONKEYDEV_ADD_SUBSTRATE = YES;
 				MONKEYDEV_CLASS_DUMP = NO;
 				MONKEYDEV_DEFAULT_BUNDLEID = NO;
@@ -741,6 +748,7 @@
 				DEVELOPMENT_TEAM = JMP4343QW7;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = chat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MONKEYDEV_ADD_SUBSTRATE = YES;
 				MONKEYDEV_CLASS_DUMP = NO;
 				MONKEYDEV_DEFAULT_BUNDLEID = NO;

@@ -15,14 +15,8 @@
 
 #define INSERT_SUCCESS_WELCOME "\n\n----------------注入 dylib 成功----------------\n\n"
 
-@interface CustomViewController
-
-@property (nonatomic, copy) NSString* newProperty;
+@interface SGAppDelegate
 
 + (void)classMethod;
-
-- (NSString*)getMyName;
-
-- (void)newMethod:(NSString*) output;
 
 @end

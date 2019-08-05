@@ -1,0 +1,30 @@
+
+/* Class = "UILabel"; text = "卡号"; ObjectID = "0CU-oi-NVE"; */
+"0CU-oi-NVE.text" = "卡号";
+
+/* Class = "UILabel"; text = "请输入已添加的本人银行卡"; ObjectID = "Oeh-d4-ZbY"; */
+"Oeh-d4-ZbY.text" = "请输入已添加的本人银行卡";
+
+/* Class = "UITextField"; placeholder = "请输入持卡人身份证号"; ObjectID = "UzG-E4-zhr"; */
+"UzG-E4-zhr.placeholder" = "请输入持卡人身份证号";
+
+/* Class = "UITextField"; placeholder = "请输入卡号"; ObjectID = "Y48-Vo-GaU"; */
+"Y48-Vo-GaU.placeholder" = "请输入卡号";
+
+/* Class = "UITextField"; placeholder = "请输入银行预留手机号"; ObjectID = "YNT-yp-bXN"; */
+"YNT-yp-bXN.placeholder" = "请输入银行预留手机号";
+
+/* Class = "UILabel"; text = "身份证号"; ObjectID = "dDh-vJ-hTb"; */
+"dDh-vJ-hTb.text" = "身份证号";
+
+/* Class = "UILabel"; text = "姓名"; ObjectID = "frQ-2W-JHR"; */
+"frQ-2W-JHR.text" = "姓名";
+
+/* Class = "UIButton"; normalTitle = "下一步"; ObjectID = "lpy-Dp-qaR"; */
+"lpy-Dp-qaR.normalTitle" = "下一步";
+
+/* Class = "UITextField"; placeholder = "请输入持卡人姓名"; ObjectID = "nPS-5o-9hf"; */
+"nPS-5o-9hf.placeholder" = "请输入持卡人姓名";
+
+/* Class = "UILabel"; text = "手机号"; ObjectID = "vYl-I7-Dvi"; */
+"vYl-I7-Dvi.text" = "手机号";

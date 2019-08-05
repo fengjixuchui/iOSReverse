@@ -1,0 +1,30 @@
+
+/* Class = "UILabel"; text = "金额将在24小时之内到账"; ObjectID = "A8E-MU-ZUi"; */
+"A8E-MU-ZUi.text" = "To your card in 24 hours";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "D64-ef-ySt"; */
+"D64-ef-ySt.text" = "Label";
+
+/* Class = "UILabel"; text = "请输入手机135***9549收到的短信验证码"; ObjectID = "G3Z-lH-7WY"; */
+"G3Z-lH-7WY.text" = "请输入手机135***9549收到的短信验证码";
+
+/* Class = "UILabel"; text = "1/2个"; ObjectID = "V2c-h0-yA2"; */
+"V2c-h0-yA2.text" = "1/2个";
+
+/* Class = "UIButton"; normalTitle = "知道了"; ObjectID = "WRG-oV-SUF"; */
+"WRG-oV-SUF.normalTitle" = "OK";
+
+/* Class = "UIButton"; normalTitle = "确定"; ObjectID = "ZK6-el-ezk"; */
+"ZK6-el-ezk.normalTitle" = "Confirm";
+
+/* Class = "UILabel"; text = "2017.1.1"; ObjectID = "g1d-v5-59b"; */
+"g1d-v5-59b.text" = "2017.1.1";
+
+/* Class = "UILabel"; text = "提现申请已提交"; ObjectID = "gMP-SY-6XS"; */
+"gMP-SY-6XS.text" = "Sumitted Successfully";
+
+/* Class = "UILabel"; text = "¥58"; ObjectID = "hWC-Ze-nXJ"; */
+"hWC-Ze-nXJ.text" = "¥58";
+
+/* Class = "UILabel"; text = "专署红包"; ObjectID = "p3b-m3-WPZ"; */
+"p3b-m3-WPZ.text" = "专署红包";
